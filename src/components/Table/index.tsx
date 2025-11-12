@@ -1,4 +1,4 @@
-import { movies } from "../Movies"
+import data from "../Movies/movies.json"
 
 type Props = {
     movies: {

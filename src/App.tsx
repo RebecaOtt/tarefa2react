@@ -3,12 +3,13 @@ import './App.css';
 import { Container } from "./components/Container"
 import { Title } from './components/Title'
 import { Table } from "./components/Table"
-import { movies } from "./components/Movies"
+import data from "./components/Movies/movies.json";
 
 function App() {
   const [search, setSearch] = useState('');
 
-  const filteredMovies = movies.filter((movie) =>
+  
+  const filteredMovies = data.filter((movie) =>
     movie.nome.toLowerCase().includes(search.toLowerCase())
   );
 
